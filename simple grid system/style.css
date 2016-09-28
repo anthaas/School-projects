@@ -1,0 +1,80 @@
+@siteWidth: 1024px;
+@gridVisible: true;
+@borderWidth: 2px;
+@margin: 10px;
+@padding: 40px;
+
+
+body{
+  max-width: @siteWidth;
+}
+
+.row {
+  display: flex;
+  & when (@gridVisible) and (@margin = 0) {
+    &:first-of-type {
+      border-top-style: solid;
+      border-top-width: @borderWidth;
+    }
+  }
+}
+
+.parent {
+  box-sizing: border-box;
+  background-color: orange;
+  float: left;
+  padding: @padding;
+  
+  & when (@gridVisible) and (@margin = 0) {
+    border: solid @borderWidth;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    &:first-of-type {
+      border-left-width: @borderWidth;
+    }
+  }
+  
+  & when (@margin > 0) {
+    & when (@gridVisible) {
+      border: solid @borderWidth;
+    }
+    
+    margin: @margin;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    
+    &:last-of-type {
+        margin-right: @margin;
+      }
+  }
+}
+
+.ratio11{
+  .parent;
+  width: 100%;
+}
+
+.ratio12{
+  .parent;
+  width: (100% / 2);
+}
+
+.ratio13{
+  .parent;
+  width: (100% / 3);
+}
+
+.ratio14{
+  .parent;
+  width: (100% / 4);
+}
+
+.ratio18{
+  .parent;
+  width: (100% / 8);
+}
+
+.ratio23{
+  .parent;
+  width: (100% / 1.5);
+}
