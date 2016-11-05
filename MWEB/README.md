@@ -8,3 +8,6 @@
 
 4. V jazyce JavaSript naprogramujte hru o život [(Game of Life)](https://cs.wikipedia.org/wiki/Hra_života) s pravidly S23/B3. Pro implementaci použijte HTML <canvas> a Web Workers. Implementujte funkci start, stop a reset.
 
+5. Za pomocí šablonovacího systému [Smarty](http://www.smarty.net/) vytvořte jednoduchý web pro správu vědeckých publikací (data uložte do libovolné databáze). Uvažujte všechny náležitosti vědeckých článků. Naprogramujte funkcionalitu pro export vybraných publikací do BibTeXu. Při práci se snažte použít maximum možností (= minimum obyčejného kodu) Smarty.
+
+6. Za pomocí [Doctrine 2](http://www.doctrine-project.org/projects/orm.html) upravte web z předchozího cvičení.
