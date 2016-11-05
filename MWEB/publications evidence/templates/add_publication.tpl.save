@@ -1,0 +1,74 @@
+{* Smarty *}
+<div class="container">
+  <form class="form-horizontal" action="{$SCRIPT_NAME}?action=submit" method="post">
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="author">Author:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="author" value="{$post.Author|escape}">
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <input type="submit" class="btn btn-primary" value="Add">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<form action="{$SCRIPT_NAME}?action=submit" method="post">
+  <table border="1">
+  <tr>
+	<td>Author:</td>
+        <td><input type="text" name
+  <tr>
+	<td>Title:</td>
+        <td><input type="text" name="Title"
+          value="{$post.Title|escape}" size="40"></td>
+  </tr>
+  <tr>
+	<td>Edition:</td>
+        <td><input type="text" name="Edition"
+          value="{$post.Edition|escape}" size="40"></td>
+  </tr>
+  <tr>
+	<td>Year:</td>
+        <td><input type="text" name="Year"
+          value="{$post.Year|escape}" size="40"></td>
+  <tr>
+  </tr>
+	<td>Location:</td>
+        <td><input type="text" name="Location"
+          value="{$post.Location|escape}" size="40"></td>
+  </tr>
+  <tr>
+	<td>Publisher:</td>
+        <td><input type="text" name="Publisher"
+          value="{$post.Publisher|escape}" size="40"></td>
+  </tr>
+  <tr>
+	<td>Pagetotal:</td>
+        <td><input type="text" name="Pagetotal"
+          value="{$post.Pagetotal|escape}" size="40"></td>
+  </tr>
+  <tr>
+	<td>Type</td>
+        <td><input type="text" name="Type"
+          value="{$post.Type|escape}" size="40"></td>
+  </tr>
+    <tr>
+      <td colspan="2" align="left">
+        <input type="submit" value="Submit">
+      </td>
+    </tr>
+  </table>
+</form>
