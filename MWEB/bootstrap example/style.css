@@ -1,0 +1,199 @@
+/* Floating Action Button */
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: #aaa url("up-arrow.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+a:hover.back-to-top {
+    background-color: #555;
+}
+
+
+
+.alert {
+    font-weight: bold;
+    color: red;
+}
+
+/* my CSS specs */
+body {
+    font-family: medium, 'Roboto', sans-serif;
+    margin: 20px;
+    background-color: WhiteSmoke;
+}
+
+#lang {
+    float: right;
+}
+
+article {
+    clear: both;
+}
+
+footer {
+    clear: both;
+    border-top: 1px solid black;
+    width: 100%;
+    display: table;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+footer div {
+    display: table-cell;
+    width: 33%;
+}
+
+#copyright {
+    text-align: right;
+    vertical-align: top;
+}
+
+#icons {
+    text-align: center;
+}
+
+#icons img {
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: "– ";
+    position: absolute;
+    left: -1.2em;
+}
+
+#menu li:before {
+    content: "";
+}
+
+ul li {
+    left: -1.2em;
+    position: relative;
+}
+
+ul li div {
+    text-indent: 0em;
+}
+
+div.left {
+    float: left;
+    width: 250px;
+    margin: 0px 20px 20px 0px;
+}
+
+#photo {
+    width: 100%;
+    max-width: 10em;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 0px 0px 0px 0px;
+}
+
+.contact-field {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        margin-top: 25px;
+    }
+    li.left,
+    li.prev,
+    li.next {
+        border-radius: 0px 0px 0px 0px;
+    }
+    nav li span {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+    }
+
+    #menu {
+        width: 100%;
+        text-align: center;
+        display: table;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+    }
+
+    #menu li {
+        display: table-cell;
+        text-indent: 0px;
+        left:0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #menu:before {
+        display: none;
+    }
+    #menu:after {
+        display: none;
+    }
+    #menu {
+        width: 100%;
+        text-align: center;
+        display: table;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+    }
+    #menu li {
+        display: table-cell;
+        width: 12%;
+        border-bottom: 1px solid black;
+        text-indent: 0px;
+        left:0;
+    }
+    #menu li.active {
+        border-top: 2px solid black;
+        border-bottom: 0px;
+        border-radius: 12px 12px 0px 0px;
+    }
+    #menu li a,
+    #menu li span {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-shadow: 1px 1px 1px gray;
+    }
+    #menu li a:hover {
+        position: relative;
+        left: -1px;
+        top: -1px;
+        text-shadow: 2px 2px 2px gray;
+    }
+    #menu li.left,
+    #menu li.right {
+        width: 20%;
+    }
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    #menu li.next {
+        border-radius: 0px 0px 0px 12px;
+    }
+    #menu li.prev {
+        border-radius: 0px 0px 12px 0px;
+    }
+}
