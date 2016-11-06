@@ -36,5 +36,5 @@ Spuštění instalačního skriptu v kořenovém adresáři projektu stáhne pot
 
 ##MySQL databáze
 - Projekt vyžaduje vytvoření MySql databáze.
-- V souboru `publications/oublications.php` je třeba správně upravit připojení do databáze.
+- V souboru `publications/publications.php` je třeba správně upravit připojení do databáze.
 - Skript `create table.sql` vytvoří potřebné tabulky.
