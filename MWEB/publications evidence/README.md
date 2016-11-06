@@ -1,4 +1,4 @@
-#Použité technologie
+#Used technologies
 
 * [Bootstrap](http://getbootstrap.com/)
 * [Smarty](http://www.smarty.net/)
@@ -6,9 +6,11 @@
 
 [Live Demo](https://158.194.128.62/smarty/index.php)
 
-#Instalace
+#Installation
 
-Spuštění instalačního skriptu v kořenovém adresáři projektu stáhne potřebné frameworky a vytvoří dodatečnou adresářovou strukturu:
+- Execute installation script in root folder.
+- Bootstrap and Smarty will be downloaded.
+- Created dir structure:
 
 <pre>
 /web/www.example.com/
@@ -34,7 +36,7 @@ Spuštění instalačního skriptu v kořenovém adresáři projektu stáhne pot
         setup.php
 </pre>
 
-##MySQL databáze
-- Projekt vyžaduje vytvoření MySql databáze.
-- V souboru `publications/publications.php` je třeba správně upravit připojení do databáze.
-- Skript `create table.sql` vytvoří potřebné tabulky.
+##MySQL database
+- MySql database is required.
+- In the file `publications/publications.php` there is e connection setup.
+- `create table.sql` will create needed table.
