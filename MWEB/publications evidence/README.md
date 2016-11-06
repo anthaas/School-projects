@@ -10,11 +10,12 @@ Adresářová struktura projektu:
         publications/
 			awesomplete.css
 			awesomplete.js
-			bootstrap
-				css
-				fonts
-				js
+			bootstrap/
+				css/
+				fonts/
+				js/
 			publications.php
+		smarty/
         templates/
             add_publication.tpl
 			exported.tpl
@@ -24,6 +25,8 @@ Adresářová struktura projektu:
         templates_c/
         configs/
         cache/
+        index.php
+        setup.php
 </pre>
 
 [Live Demo](https://158.194.128.62/smarty/index.php)
