@@ -38,5 +38,5 @@
 
 ##MySQL database
 - MySql database is required.
-- In the file `publications/publications.php` there is e connection setup.
+- In the file `publications/publications.php` there is a connection setup.
 - `create table.sql` will create needed table.
