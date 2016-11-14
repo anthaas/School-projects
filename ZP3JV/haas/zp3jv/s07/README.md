@@ -27,3 +27,5 @@
 </li>
 
 </ol>
+
+Pro implementaci výše zmíněných metod použijte Stream API
